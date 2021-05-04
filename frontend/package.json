@@ -1,7 +1,7 @@
 {
-  "name": "sick-fits-frontend",
+  "name": "my-shop-frontend",
   "version": "2.0.0",
-  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
+  "description": "An example React, GraphQL, Next and Apollo",
   "main": "index.js",
   "scripts": {
     "dev": "next -p 7777",
@@ -65,8 +65,7 @@
       "wesbos"
     ],
     "rules": {
-        "tabWidth": 4
-      
+      "tabWidth": 4
     }
   },
   "jest": {

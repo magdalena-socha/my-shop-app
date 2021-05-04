@@ -1,7 +1,9 @@
-export default function homePage() {
+
+
+export default function IndexPage() {
   return (
-    <div>
-      <p>Hello</p>
-    </div>
+  
+      <p>im an index page</p>
+   
   );
 }

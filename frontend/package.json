@@ -63,7 +63,11 @@
   "eslintConfig": {
     "extends": [
       "wesbos"
-    ]
+    ],
+    "rules": {
+        "tabWidth": 4
+      
+    }
   },
   "jest": {
     "setupFilesAfterEnv": [

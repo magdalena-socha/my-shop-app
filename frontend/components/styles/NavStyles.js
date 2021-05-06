@@ -25,7 +25,7 @@ const NavStyles = styled.ul`
     &:before {
       content: '';
       width: 2px;
-      background: var(--lightGray);
+      background: lightgray;
       height: 100%;
       left: 0;
       position: absolute;

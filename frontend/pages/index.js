@@ -1,9 +1,4 @@
+import ProductsPage from './products'
+export default ProductsPage
 
-
-export default function IndexPage() {
-  return (
-  
-      <p>im an index page</p>
-   
-  );
-}
+// export {default} from './products'

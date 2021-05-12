@@ -20,6 +20,18 @@ export default function Product( {product} ) {
             <PriceTag>
                 {formatMoney(product.price)}
             </PriceTag>
+            <p>{product.description}</p>
+            <div className="ButtonList">
+                <Link href={
+                    {
+                        pathname: 'update',
+                        query: {
+                            id: product.id,
+                        },
+                    }
+                }> Edit
+                </Link>
+            </div>
         </ItemStyles>
     )
 }

@@ -4,6 +4,7 @@ import Form from '../components/styles/Form';
 import DisplayError from './ErrorMessage';
 import useForm from '../lib/useForm';
 
+
 const SINGLE_PRODUCT_QUERY = gql`
  query SINGLE_PRODUCT_QUERY( $id: ID!) {
     Product(where: {

@@ -7,7 +7,7 @@ import {perPage} from '../config';
 import { useQuery } from "@apollo/client";
 import Head from 'next/head';
 
-const PAGINATION_QUERY = gql`
+export const PAGINATION_QUERY = gql`
     query PAGINATION_QUERY {
         _allProductsMeta {
             count

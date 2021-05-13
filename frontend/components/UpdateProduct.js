@@ -41,7 +41,6 @@ export default function UpdateProduct( {id} ) {
         variables: { id }
     });
 
-    if (loading) return <p>Loading..</p>
 //2. getting a mutation to update the product
     const [updateProduct, {data: updateData, error: updateError, loading: updateLoading}] = useMutation(UPDATE_PRODUCT_MUTATION);
 
@@ -51,7 +50,7 @@ export default function UpdateProduct( {id} ) {
     //     price: data.price,
     //     description: data.description,
     // });
-    if (loading) return <p>Loading..</p>
+    
 
 
 // 3. a form that handles the updates

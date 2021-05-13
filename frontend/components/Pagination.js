@@ -29,11 +29,14 @@ function Pagination( {page} ) {
             <Head> 
                 <title>Nostalgia - Page {page}</title>
             </Head>
+
             <Link href={`/products/${page -1}`} aria-disabled={page == 1}>
                 <a aria-disabled={page == 1 }>prev</a>
             </Link>
-            <p> Page {page} of  {pageCount}</p>
-            <p> {count} items</p>
+
+                <p> Page {page} of {pageCount}</p>
+                <p> {count} items</p>
+
             <Link href={`/products/${page +1}`}>
                 <a aria-disabled={page == pageCount }>next</a>
             </Link>

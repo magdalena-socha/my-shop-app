@@ -6,13 +6,20 @@ export default function Nav() {
     const user = useUser();
     return (
      <NavStyles>
-         <Link href="/account">Account</Link>
+         <Link href="/products">Products</Link>
          {
              user && (
                  <>
-                    <Link href="/products">Products</Link>
                     <Link href="/sell">Sell</Link>
                     <Link href="/orders">Order</Link>
+                    <Link href="/account">Account</Link>
+                </>
+             )
+         }
+         {
+             !user && (
+                 <>
+                    <Link href="/signin">Sign in</Link>
                 </>
              )
          }

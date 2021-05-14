@@ -21,7 +21,7 @@ function Pagination( {page} ) {
     if (loading) return <p>Loading..</p>;
     if (error) return <DisplayError error={error}/>;
     
-    const count = data._allProductsMeta.count;
+    const {count} = data._allProductsMeta;
     const pageCount = Math.ceil(count / perPage);
    
     return (
@@ -30,7 +30,7 @@ function Pagination( {page} ) {
                 <title>Nostalgia - Page {page}</title>
             </Head>
 
-            <Link href={`/products/${page -1}`} aria-disabled={page == 1}>
+            <Link href={`/products/${page -1}`}>
                 <a aria-disabled={page == 1 }>prev</a>
             </Link>
 
@@ -38,7 +38,7 @@ function Pagination( {page} ) {
                 <p> {count} items</p>
 
             <Link href={`/products/${page +1}`}>
-                <a aria-disabled={page == pageCount }>next</a>
+                <a aria-disabled={page >= pageCount }>next</a>
             </Link>
 
         </PaginationStyles>

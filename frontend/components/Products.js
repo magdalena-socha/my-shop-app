@@ -49,5 +49,5 @@ export default function Products( {page} ) {
                 )}
             </ProductsListStyles>
         </div>
-    )
+    );
 }

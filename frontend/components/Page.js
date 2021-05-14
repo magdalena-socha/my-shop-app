@@ -4,10 +4,10 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyles = createGlobalStyle`
-    @font-face {
+    /* @font-face {
       font-weight: normal;
       font-style: normal;
-    }
+    } */
     html {
         --red: #ff0000;
         --dark: #393939;

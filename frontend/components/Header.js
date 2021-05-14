@@ -37,7 +37,7 @@ export default function Header() {
          <div className="bar">
              <Logo>
                  <Link href="/">
-                 éphémère
+                 Nostalgia
                 </Link>
              </Logo>
             <Nav/>

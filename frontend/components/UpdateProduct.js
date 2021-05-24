@@ -27,7 +27,7 @@ const UPDATE_PRODUCT_MUTATION = gql`
     ) {
         updateProduct (
             id: $id
-            data: { name: $name, desciption: $description, price: $price }
+            data: { name: $name, description: $description, price: $price }
         ) {
             id
             name
@@ -39,7 +39,7 @@ const UPDATE_PRODUCT_MUTATION = gql`
 export default function UpdateProduct( {id} ) {
 //1. getting an existing product
     const  { data, error, loading} = useQuery(SINGLE_PRODUCT_QUERY, {
-        variables: { id }
+        variables: { id },
     });
 
 //2. getting a mutation to update the product

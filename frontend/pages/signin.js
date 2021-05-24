@@ -1,5 +1,6 @@
 import SignIn from "../components/SignIn";
 import SignUp from "../components/SignUp";
+import RequestReset from "../components/RequestReset";
 import styled from "styled-components";
 
 const GridStyles = styled.div`
@@ -12,6 +13,7 @@ export default function SignInPage() {
       <GridStyles>
         <SignIn/>
         <SignUp/>
+        <RequestReset/>
       </GridStyles>
     );
   }

@@ -25,7 +25,7 @@ export default function Product( {product} ) {
             <div className="ButtonList">
                 <Link href={
                     {
-                        pathname: 'update',
+                        pathname: '/update',
                         query: {
                             id: product.id,
                         },

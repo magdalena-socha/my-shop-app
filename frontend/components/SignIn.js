@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Form from "./styles/Form";
 import useForm from "../lib/useForm";
 import gql from 'graphql-tag';
@@ -46,7 +46,7 @@ function SignIn() {
     const error = data?.authenticateUserWithPassword.__typename === "UserAuthenticationWithPasswordFailure" ? data?.authenticateUserWithPassword : undefined;
 
     return (
-        <Form method="post" onSubmit={handleSubmit}>
+        <Form method="POST" onSubmit={handleSubmit}>
             <h2>Sign in to your account</h2>
             <DisplayError error={error}/>
             <fieldset>

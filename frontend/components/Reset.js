@@ -39,6 +39,9 @@ function Reset({token}) {
             <h2>Reset your password</h2>
             <DisplayError error={error || anotherError}/>
             <fieldset>
+                {data?.redeemUserPasswordResetToken === null && (
+                <p>Success! You can Now sign in</p>
+                 )}
                 <label htmlFor="email">
                     Email
                     <input

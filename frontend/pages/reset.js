@@ -1,4 +1,4 @@
-import React from 'react'
+
 import RequestReset from '../components/RequestReset'
 import Reset from '../components/Reset'
 
@@ -10,7 +10,7 @@ function ResetPage({query}) {
                 <RequestReset/>
             </div>
         
-        )
+        );
     }
     return (
         <div>

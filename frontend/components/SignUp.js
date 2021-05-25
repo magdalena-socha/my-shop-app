@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Form from "./styles/Form";
 import useForm from "../lib/useForm";
 import gql from 'graphql-tag';
@@ -33,7 +33,7 @@ function SignUp() {
 
     async function handleSubmit(e) {
         e.preventDefault();
-        const res = await signup();
+        const res = await signup().catch(console.error);
         console.log(res);
         resetForm();
     }
@@ -41,7 +41,7 @@ function SignUp() {
     // const error = data?.authenticateUserWithPassword.__typename === "UserAuthenticationWithPasswordFailure" ? data?.authenticateUserWithPassword : undefined;
 
     return (
-        <Form method="post" onSubmit={handleSubmit}>
+        <Form method="POST" onSubmit={handleSubmit}>
             <h2>Sign Up for an account</h2>
             <DisplayError error={error}/>
             <fieldset>

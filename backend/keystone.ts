@@ -4,6 +4,7 @@ import {withItemData, statelessSessions} from '@keystone-next/keystone/session';
 import {config, createSchema} from '@keystone-next/keystone/schema';
 import {User} from './schemas/User';
 import {Product} from './schemas/Product';
+import {CartItem} from './schemas/CartItem';
 import {ProductImage} from './schemas/ProductImage';
 import 'dotenv/config';
 import { insertSeedData } from './seed-data';
@@ -54,6 +55,7 @@ export default withAuth(config({
         User,
         Product,
         ProductImage,
+        CartItem,
     }),
     ui: {
         //change this for roles

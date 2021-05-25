@@ -16,7 +16,7 @@ export const CartItem = list({
             ref: 'Product'
         }),
         user: relationship({ 
-            ref: 'User'
+            ref: 'User.cart'
         }),
     
     
